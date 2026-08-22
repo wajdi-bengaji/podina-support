@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistance — Podina</title>
+<style>
+  :root {
+    --navy: #1B3A5C;
+    --gold: #C9A227;
+    --gold-dark: #B8860B;
+    --beige-light: #F3E3C7;
+    --beige-lighter: #FBF3E4;
+    --gray-text: #444444;
+    --dark-text: #1A1A1A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: var(--dark-text);
+    background: #ffffff;
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--navy);
+    padding: 40px 20px 32px;
+    text-align: center;
+  }
+
+  header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0 0 6px;
+  }
+
+  header p {
+    color: var(--beige-light);
+    font-style: italic;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 22px;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    margin-top: 40px;
+  }
+
+  h2:first-of-type { margin-top: 0; }
+
+  p { color: var(--gray-text); font-size: 16px; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .card {
+    background: var(--beige-lighter);
+    border: 1px solid var(--beige-light);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .card h3 {
+    color: var(--navy);
+    margin: 0 0 8px;
+    font-size: 16px;
+  }
+
+  .card a {
+    color: var(--gold-dark);
+    font-weight: bold;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .card a:hover { text-decoration: underline; }
+
+  details {
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+
+  summary {
+    font-weight: bold;
+    color: var(--navy);
+    cursor: pointer;
+  }
+
+  details p {
+    margin: 10px 0 0;
+  }
+
+  footer {
+    background: var(--navy);
+    text-align: center;
+    padding: 24px 20px;
+    color: var(--beige-light);
+    font-size: 14px;
+  }
+
+  footer strong { color: #ffffff; }
+
+  @media (max-width: 480px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Podina</h1>
+  <p>Podcasts Tunisiens — Centre d'assistance</p>
+</header>
+
+<main>
+  <h2>Besoin d'aide ?</h2>
+  <p>Vous trouverez ci-dessous les moyens de nous contacter et les réponses aux questions les plus fréquentes concernant l'application Podina.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>📧 Email</h3>
+      <a href="mailto:contact@podina.tn">contact@podina.tn</a>
+    </div>
+    <div class="card">
+      <h3>🌐 Site web</h3>
+      <a href="https://www.podina.tn" target="_blank" rel="noopener">www.podina.tn</a>
+    </div>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+
+  <details>
+    <summary>L'application est-elle gratuite ?</summary>
+    <p>Oui, Podina est gratuite à télécharger et à utiliser. L'application permet d'écouter des radios et podcasts tunisiens sans frais d'abonnement.</p>
+  </details>
+
+  <details>
+    <summary>Je n'arrive pas à écouter un flux radio, que faire ?</summary>
+    <p>Vérifiez d'abord votre connexion internet (Wi-Fi ou données mobiles). Si le problème persiste, essayez de fermer complètement l'application puis de la relancer. Si le souci continue, contactez-nous à contact@podina.tn en précisant le nom de la radio ou du podcast concerné.</p>
+  </details>
+
+  <details>
+    <summary>Comment signaler un problème avec un contenu ou une radio ?</summary>
+    <p>Envoyez-nous un email à contact@podina.tn avec le nom du programme concerné et une description du problème rencontré. Nous traitons chaque signalement dans les meilleurs délais.</p>
+  </details>
+
+  <details>
+    <summary>Comment supprimer mon compte ou mes données ?</summary>
+    <p>Envoyez une demande à contact@podina.tn depuis l'adresse email associée à votre compte. Votre demande sera traitée conformément à notre politique de confidentialité.</p>
+  </details>
+
+  <details>
+    <summary>L'application fonctionne-t-elle en arrière-plan ?</summary>
+    <p>Oui, Podina permet l'écoute en arrière-plan afin que vous puissiez continuer à écouter votre contenu tout en utilisant d'autres applications ou lorsque votre écran est verrouillé.</p>
+  </details>
+
+  <h2>Signaler un bug ou proposer une amélioration</h2>
+  <p>Vos retours nous aident à améliorer Podina. N'hésitez pas à nous écrire à <a href="mailto:contact@podina.tn" style="color:var(--gold-dark); font-weight:bold;">contact@podina.tn</a> pour toute suggestion, signalement de bug, ou demande de radio/podcast à ajouter au catalogue.</p>
+</main>
+
+<footer>
+  <strong>Podina</strong> — La voix de la Tunisie 🎙️<br>
+  contact@podina.tn · www.podina.tn
+</footer>
+
+</body>
+</html>
